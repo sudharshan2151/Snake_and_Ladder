@@ -23,7 +23,7 @@ public class GameStateImpl implements GameState{
     	while(true) {
     		
     		Player player = gameRepository.getPlayer(i%n);
-    		int roll = rollDice(player.getName());
+    		int roll = rollDice();
     		int nextPosition = roll+player.getPosition();
     		if(gameRepository.isLadder(nextPosition)) {
     			int ladder = gameRepository.getLadder(nextPosition);
@@ -45,26 +45,8 @@ public class GameStateImpl implements GameState{
     		i++;
     	}
     } 
-    public  int rollDice(String playerName) {
+    public  int rollDice() {
     	
-    	boolean label = true;
-    	while(label) {
-    		try {
-    			System.out.println(playerName +" please 1 to rollDice");
-    			int n = Integer.parseInt(scanner.nextLine());
-        		switch(n) {
-        		case 1:
-        			label=false;
-        			break;
-        		default:
-        			System.out.println("Invalid input");
-        			break;
-        		}
-    		}
-    		catch(NumberFormatException ex) {   		
-    			System.out.println("Invalid input");
-    		}
-    	}
     	return (int)(Math.random()*6)+1;
     }
 	public void addPlayer(Player player) {

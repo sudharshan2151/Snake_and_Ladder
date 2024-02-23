@@ -13,19 +13,19 @@
 
 ## Introduction
 
--This is a simple Snake and Ladder application implemented in Java. The game allows multiple players to play on a board with snakes and ladders.
+This is a simple Snake and Ladder application implemented in Java. The game allows multiple players to play on a board with snakes and ladders.
 
 ## Problem Statement
 
--Create a snake and ladder application. The application should take as input (from the command line or a file):
+Create a snake and ladder application. The application should take as input (from the command line or a file):
 
 - Number of snakes (s) followed by s lines each containing 2 numbers denoting the head and tail positions of the snake.
 - Number of ladders (l) followed by l lines each containing 2 numbers denoting the start and end positions of the ladder.
 - Number of players (p) followed by p lines each containing a name.
 
--After taking these inputs, you should print all the moves in the form of the current player name followed by a random number between 1 to 6 denoting the die roll and the initial and final position based on the move.
+After taking these inputs, you should print all the moves in the form of the current player name followed by a random number between 1 to 6 denoting the die roll and the initial and final position based on the move.
 
--When someone wins the game, print that the player won the game.
+When someone wins the game, print that the player won the game.
 
 ## Rules of the Game
 
@@ -141,7 +141,7 @@ Sagar wins the game
 To use this application, follow these steps:
 1. Clone the repository to your local machine.
 2. Compile the Java files.
-3. Run the application in mainConfig file.
+3. Run the application in MainConfig file.
 4. Input the number of snakes, ladders, and players.
 5. Follow the prompts to input the positions and names.
 6. Observe the game progress and output.
